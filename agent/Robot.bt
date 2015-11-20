@@ -23,7 +23,7 @@
             "properties": {
               "behavior": {
                 "type": "uriPath",
-                "value": "agent/initoooo.bt"
+                "value": "agent/init.bt"
               },
               "inputParams": []
             },
