@@ -258,16 +258,6 @@
         ],
         "id": "084b1fb1-2e89-4772-a83e-dc140e09cdcb",
         "type": "sequence"
-      },
-      {
-        "activated": true,
-        "metadata": {
-          "label": ""
-        },
-        "properties": {},
-        "children": [],
-        "id": "c710bb79-1e96-45f3-9006-8d96478b81ea",
-        "type": "sequence"
       }
     ],
     "id": "0501bb47-9e0c-4328-8402-6dd231e72adf"
