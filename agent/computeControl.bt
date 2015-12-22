@@ -156,102 +156,7 @@
                   },
                   "op": "<"
                 },
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {},
-                    "children": [
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "name": "Compute",
-                          "inputParams": [
-                            {
-                              "key": "expression",
-                              "type": "string",
-                              "value": "{now}+{lower}*60*1000"
-                            },
-                            {
-                              "key": "now",
-                              "type": "entityKnowledge",
-                              "value": "time.fullTime"
-                            },
-                            {
-                              "key": "lower",
-                              "type": "entityKnowledge",
-                              "value": "minutePerLower"
-                            }
-                          ],
-                          "outputParams": [
-                            {
-                              "key": "result",
-                              "type": "entityKnowledge",
-                              "value": "control.controlTime"
-                            }
-                          ]
-                        },
-                        "children": [],
-                        "id": "15eb1adf-e082-409e-a3ea-54c90d4d0184",
-                        "type": "action"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "destination": "control.raise",
-                          "op": {
-                            "type": "integer",
-                            "value": "-1"
-                          }
-                        },
-                        "children": [],
-                        "id": "b12270a7-7885-457e-9a16-d4bea95305d3",
-                        "type": "set"
-                      },
-                      {
-                        "activated": true,
-                        "metadata": {
-                          "label": ""
-                        },
-                        "properties": {
-                          "name": "Compute",
-                          "inputParams": [
-                            {
-                              "key": "expression",
-                              "type": "string",
-                              "value": "{a}-1"
-                            },
-                            {
-                              "key": "a",
-                              "type": "entityKnowledge",
-                              "value": "sensors.temperature"
-                            }
-                          ],
-                          "outputParams": [
-                            {
-                              "key": "result",
-                              "type": "entityKnowledge",
-                              "value": "control.nextValue"
-                            }
-                          ]
-                        },
-                        "children": [],
-                        "id": "931ec3b8-8ff3-474e-9c71-98182c9b747e",
-                        "type": "action"
-                      }
-                    ],
-                    "id": "76540f08-0908-431f-bca0-f4260e5e7600",
-                    "type": "sequence"
-                  }
-                ],
+                "children": [],
                 "id": "4375cb5c-0ee2-443a-b67b-beada4865619",
                 "type": "condition"
               },
@@ -327,6 +232,100 @@
                   }
                 ],
                 "id": "79a49ca5-4632-4f6f-a857-4569b470bc3f",
+                "type": "sequence"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "name": "Compute",
+                      "inputParams": [
+                        {
+                          "key": "expression",
+                          "type": "string",
+                          "value": "{now}+{lower}*60*1000"
+                        },
+                        {
+                          "key": "now",
+                          "type": "entityKnowledge",
+                          "value": "time.fullTime"
+                        },
+                        {
+                          "key": "lower",
+                          "type": "entityKnowledge",
+                          "value": "minutePerLower"
+                        }
+                      ],
+                      "outputParams": [
+                        {
+                          "key": "result",
+                          "type": "entityKnowledge",
+                          "value": "control.controlTime"
+                        }
+                      ]
+                    },
+                    "children": [],
+                    "id": "15eb1adf-e082-409e-a3ea-54c90d4d0184",
+                    "type": "action"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "destination": "control.raise",
+                      "op": {
+                        "type": "integer",
+                        "value": "-1"
+                      }
+                    },
+                    "children": [],
+                    "id": "b12270a7-7885-457e-9a16-d4bea95305d3",
+                    "type": "set"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "name": "Compute",
+                      "inputParams": [
+                        {
+                          "key": "expression",
+                          "type": "string",
+                          "value": "{a}-1"
+                        },
+                        {
+                          "key": "a",
+                          "type": "entityKnowledge",
+                          "value": "sensors.temperature"
+                        }
+                      ],
+                      "outputParams": [
+                        {
+                          "key": "result",
+                          "type": "entityKnowledge",
+                          "value": "control.nextValue"
+                        }
+                      ]
+                    },
+                    "children": [],
+                    "id": "931ec3b8-8ff3-474e-9c71-98182c9b747e",
+                    "type": "action"
+                  }
+                ],
+                "id": "76540f08-0908-431f-bca0-f4260e5e7600",
                 "type": "sequence"
               }
             ],
